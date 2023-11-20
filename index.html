@@ -6,19 +6,12 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>Cole's Portfolio</title>
 			<link rel="stylesheet" href="/CSS/GlobalStyle.css">
-			<script src="script.js" defer></script>
+			<script src="/ScirptLibrary/pageScroll.js" defer></script>
 		</head>
 
 		<body>
 			<header>
 				<nav>  <!--Navigation Elements-->
-					<ul id="Navigation">
-						<li><A href="Schedule.html">Schedule</A></li>
-						<li><A href="Staff.html">Staff</A></li>
-						<li><A href="Home.html">Home</A></li>
-						<li><A href="Contact-Us.html">Contact Us</A></li>	
-					</ul>
-
 					<ul id="socials"><!--Social Media Links-->
 						<li><A href="githublink"><img alt="GitHub       " style="width: 25px; height: 25px; object-fit: cover;" fetchpriority="high" src="Images/github.webp"></A></li>
 						<li><A href="llinkedin"><img alt="LinkedIn" style="width: 25px; height: 25px; object-fit: cover;" fetchpriority="high" src="Images/linkedin.webp"></A></li>
@@ -28,34 +21,42 @@
 				</nav>
 			</header>
 
-			<main>
+			<main id="Home">
+
 				<div class="webSection" id="landingSection">
+					<video id="landingVideo" class="K8MSra" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" loop="" tabindex="-1" autoplay="autoplay" style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="Videos/glitch_video.mp4"></video>
 
-					<video id="landingVideo" class="K8MSra" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" loop="" tabindex="-1" autoplay="" style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="Videos/glitch_video.mp4"></video>
-
-					<img src=".jpg" alt="__"><!--logo-->
-					<h1>S.Cole</h1>
-
-					<img src="" alt=""> <!--auto next Section-->
-
-					<h2> Purpose:</h2>
-					<p> lorem isque sonudjgkdals.</p>
-				</div>
-
-				<div class="pageDivider" id="page1-2">
-					<h2> Next Generation Cybersecurity Professional</h2>
+					<div id="landingContent">
+						<h2> Next Generation Cybersecurity Professional</h2>
+						<h1 data-text="S.Cole">S.Cole</h1>
+						<!--possibly add btn tbd-->
+					</div>
+					
 				</div>
 
 				<div class="webSection" id="aboutMe">
 					<div id="left">
 						<h3> About Me:</h3>
+						<img class="avatar" src="Images/avatar.jpg" alt="avatar">
 						<h2> S. Cole</h2>
 						<p>info about me and my education</p>
 					</div>
 
-					<div id=" right">
+					<div id="right"> <!--include education, extracurriculars and tryhackme-->
 						<h2>Languages</h2>
-						<div class="carousel" id="codeLanguages"></div>
+							<div class="slider" id="codeLanguages">
+								<div class="slide-track">
+									<img class="slide" src="/Images/SymbolsIcons/javascriptIcon.png" alt="JavaScript">
+
+									<img class="slide" src="Images/SymbolsIcons/cssIcon.png" alt="CSS">
+
+									<img class="slide" src="Images/SymbolsIcons/htmlIcon.png" alt="HTML">
+
+									<img class="slide" src="Images/SymbolsIcons/mysqlIcon.png" alt="MySQL">
+
+									<img class="slide" src="Images/SymbolsIcons/pythonIcon.png" alt="Python">
+								</div>
+							</div>
 
 						<h2>Tools</h2>
 						<div class="carousel" id="hackTools"></div>
@@ -64,11 +65,23 @@
 						<div class="wordCarousel" id="genSkills"></div>
 					</div>
 				</div>
+				
+				<div class="webSection" id="projects">
 
-				<div class="webSection" id="recentActivity">
+				</div>
+
 
 				</div>
 			</main>
+
+			<footer>
+				<ul id="Navigation">
+					<li><A href="Home.html">Home</A></li>
+					<li><A href="notes.html">Schedule</A></li>
+					<li><A href="Staff.html">Staff</A></li>
+					<li><A href="Contact-Us.html">Contact Us</A></li>	
+				</ul>
+			</footer>
 
 		</body>
 

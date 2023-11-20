@@ -2,6 +2,8 @@
 /*import other css files*/
 /*@import "file/path/file.css";)*/
 
+@import url(/CSS/Index.css);
+@import url(/CSS/EffectsAnimations.css);
 
 /*Site Colors*/
 :root{
@@ -24,16 +26,6 @@ header{
 	padding-top: 30px;
 }
 
-	header ul#Navigation{
-		display:flex;
-		flex-flow: row;
-		float:left;
-		gap: 20px;
-		padding-left: 20px;
-		font-weight:bold;
-		list-style-type: none;
-	}
-
 	header ul#socials{
 		display:flex;
 		flex-flow: row;
@@ -44,17 +36,23 @@ header{
 	}
 
 
-	video#landingVid{
-		height: 100%;
-		object-fit:cover;
-		object-position: center;
-		opacity: 1;
-	}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
 
-	div#landingSection h1,h2,p {
+	footer ul#Navigation{
 		position: relative;
-		z-index: 2;
-		top: 100px;
-		left: 100px;
+		display:flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items:center;
+		gap: 40px;
+		font-weight:bold;
+		list-style-type: none;
 	}
 
+	footer ul#Navigation li{
+		background: black;
+	}
