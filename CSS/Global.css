@@ -1,0 +1,69 @@
+
+@font-face {
+	font-family: azonix;
+	src: url(/Fonts/Azonix.otf);
+  }
+  @font-face {
+	font-family: nordic;
+	src: url(/Fonts/Nordic\ Alternative\ Regular.ttf);
+  }
+
+body{
+	display: flex;
+	flex-flow: column;
+}
+
+header{
+	z-index: 100;
+	font-size: 23px;
+	color: white;
+}
+
+		header ul#menu{
+			position: absolute;
+			visibility:hidden;
+			list-style: none;
+		} 
+
+		header ul#contact-row{
+			display: flex;
+			position:absolute;
+			display: flex;
+			flex-flow: row;
+			list-style: none;
+			font-size: 20px;
+			gap: 20px;
+			left: -15px;
+		}
+			header ul#contact-row a{
+				text-decoration: none;
+				color: white;
+			}
+
+		header a{
+			text-decoration: none; 
+		}
+
+		header ul#socialMedia-row{
+			position: absolute;
+			list-style: none;
+			display:flex;
+			flex:row;
+			gap: 10px;
+			right: 30px;
+			bottom: -16px;
+		}
+
+		header h5{
+			position: absolute;
+			bottom:-16px;
+			left: 20px;
+		}
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+/* page one styling*/
+main div#p1{
+	Color: white;
+	margin-bottom: -200px;
+	background-image: url(/Images/goldbackground.JPG);
+
+}
+
+main div#p1 div#Title-Container{
+	position: fixed;
+	top: 180px;
+	width: 100%;
+	text-align: left;
+	font-family: Azonix;
+}
+
+main div#p1 div#Title-Container h1{
+	position: relative;
+	font-size: 71px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 3px;
+	text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+	
+}
+
+main div#p1 div#Title-Container h2{
+	position: relative;
+	font-size: 62px;
+	left: 40px;
+	text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+main div#p1 idiv#arrow-down{
+position: fixed;
+bottom: 100;
+left:-400px;
+font-size: 100px;
+height: 120px;
+width: 120px;
+}
+
+
+/*page 2*/
+
+main div#p2{
+	display: flex;
+	flex: row;
+}
+
+	main div#p2 div#left{
+		margin-top: 90px;
+		width:100%;
+		height: 600px;
+	}
+		main div#p2 div#left div#avatar-container{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			left: 210px;
+		}
+			main div#p2 div#left div#avatar-container img{
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				/*TODO: change border to gold*/
+				border: 4px solid black;
+			}
+				main div#p2 div#left div#about-me-text-container{
+					position:relative;
+					left: 210px;
+					margin-top: -24px;
+					color: white;
+				}
+
+					main div#p2 div#left div#about-me-text-container h4#about-me{
+						position: relative;
+						font-size: 25px;
+						letter-spacing: 10px;
+						margin-bottom: -45px;
+					}
+
+					main div#p2 div#left div#about-me-text-container p#about-me-paragraph{
+						background-color: yellow;
+						height: 300px;
+						width: 1200px;
+						margin-top:-40px;
+					}
+
+					main div#p2 div#left div#about-me-text-container h2#about-me-name{
+						position: relative;
+						font-size: 50px;
+					}
+
+					main div#p2 div#left div#animated_skills{
+						position: relative;
+						background-color: white;
+						width: 910px;
+						left: 500px;
+						height: 200px;
+						margin-bottom: -230px;
+					}
+
+
+
+main div#p3{
+	display: flex;
+	flex: row;
+	background-image: url(/Images/workstation.jpg);
+}
+main div#p3 div#Education, main div#p3 div#Experience{
+position: relative;
+height: 550px;
+width: 400px;
+background: rgba(255, 255, 255, 0.295);
+border-radius: 10px;
+
+}
+
+main div#p3 h2{
+	font-size: 40px;
+	margin: 0;
+}
+
+
+main div#p3 div#Education{
+	margin-right: 50px;
+	left: 300px;
+	top: 100px;
+}
+
+main div#p3 div#Experience{
+position: relative;
+left: 300px;
+top: 160px;
+}
