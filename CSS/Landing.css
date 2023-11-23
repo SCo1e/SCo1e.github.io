@@ -57,7 +57,7 @@ main div#p2{
 			position: relative;
 			width: 200px;
 			height: 200px;
-			left: 210px;
+			left: 200px;
 		}
 			main div#p2 div#left div#avatar-container img{
 				position: absolute;
@@ -66,6 +66,7 @@ main div#p2{
 				border-radius: 50%;
 				/*TODO: change border to gold*/
 				border: 4px solid black;
+				z-index: 9;
 			}
 				main div#p2 div#left div#about-me-text-container{
 					position:relative;
@@ -79,6 +80,8 @@ main div#p2{
 						font-size: 25px;
 						letter-spacing: 10px;
 						margin-bottom: -45px;
+						letter-spacing: -2px;
+						left: 40px;
 					}
 
 					main div#p2 div#left div#about-me-text-container p#about-me-paragraph{
@@ -243,6 +246,9 @@ height: 550px;
 width: 400px;
 background: rgba(255, 255, 255, 0.295);
 border-radius: 10px;
+box-shadow: -1rem 0 3rem #000;
+border: 1px solid rgba(255, 255, 255, 0.212);
+color: white;
 
 }
 
@@ -257,12 +263,28 @@ main div#p3 div#Education{
 	left: 300px;
 	top: 100px;
 }
+	main div#p3 div#Education h2{
+		position:relative;
+		top: -40px;
+		text-align: center;
+		Font-size: 70px;
+		font-weight: bold;
+	}
+		main div#p3 div#Education div#general-education h3{
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 15px;
+		}
+
+
 
 main div#p3 div#Experience{
 position: relative;
 left: 300px;
 top: 160px;
 }
+
+
 
 
   
