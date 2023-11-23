@@ -82,10 +82,13 @@ main div#p2{
 					}
 
 					main div#p2 div#left div#about-me-text-container p#about-me-paragraph{
-						background-color: yellow;
-						height: 300px;
+						background-color: rgba(41, 39, 39, 0.685);
+						border: 1px solid white;
+						height: 280px;
 						width: 1200px;
 						margin-top:-40px;
+						font-size: 18px;
+						padding: 10px;
 					}
 
 					main div#p2 div#left div#about-me-text-container h2#about-me-name{
@@ -95,12 +98,137 @@ main div#p2{
 
 					main div#p2 div#left div#animated_skills{
 						position: relative;
-						background-color: white;
 						width: 910px;
 						left: 500px;
 						height: 200px;
 						margin-bottom: -230px;
 					}
+
+					/* animated cards*/
+main div#p2 div.Languages-container {
+	position: absolute;
+	height: 200px;
+	width: 700px;
+	top: 0px;
+	left: calc(50% - 460px);
+	display: flex;
+
+  }
+  
+  main div#p2 div.Languages-container .card {
+	display: flex;
+	height: 240px;
+	width: 200px;
+	background-color: #17141d;
+	border-radius: 10px;
+	box-shadow: -1rem 0 3rem #000;
+	transition: 0.4s ease-out;
+	position: relative;
+	left: 0px;
+	overflow: hidden;
+	z-index: 1;
+	border: 1px solid white
+  }
+  
+  main div#p2 div.Languages-container .card:not(:first-child) {
+	  margin-left: -50px;
+  }
+  
+  main div#p2 div.Languages-container .card:hover {
+	transform: translateY(-20px);
+	transition: 0.4s ease-out;
+  }
+  
+  main div#p2 div.Languages-container  .card:hover ~ .card {
+	position: relative;
+	transform: translateX(50px);
+	transition: 0.4s ease-out;
+  }
+  
+  main div#p2 div.Languages-container .title {
+	color: white;
+	font-weight: 500;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	font-family: Azonix;
+	z-index: 2;
+  }
+  
+  main div#p2 div.Languages-container .bar {
+	position: absolute;
+	top: 80px;
+	left: 15px;
+	height: 10px;
+	width: 150px;
+	z-index: 2;
+	border: 1px solid white;
+  }
+  
+  main div#p2 div.Languages-container .emptybar {
+	background-color: #474b52;
+	width: 100%;
+	height: 100%;
+  }
+  
+  main div#p2 div.Languages-container .filledbar {
+	position: absolute;
+	top: 0px;
+	z-index: 3;
+	width: 0px;
+	height: 100%;
+	background: rgb(0,154,217);
+	background: linear-gradient(90deg, #AA771C 0%, #BF953F 65%, #FCF6BA 100%);
+	transition: 0.6s ease-out;
+  }
+  
+  main div#p2 div.Languages-container .card:hover .filledbar {
+	width: 120px;
+	transition: 0.4s ease-out;
+  }
+  
+  main div#p2 div.Languages-container .logo {
+	position: absolute;
+	top: -5px;
+	left: calc(50% - 125px);
+	color: #bf943f46;
+	font-size: 250px;
+	z-index:1;
+  }
+
+  main div#p2 div.Languages-container #java-logo {
+	position: absolute;
+	top: -5px;
+	font-size: 200px;
+	left: calc(50% - 105px);
+  }
+
+  main div#p2 div.Languages-container #js-logo {
+	position: absolute;
+	top: -10px;
+	left: calc(50% - 125px);
+  }
+
+  main div#p2 div.Languages-container #C-logo {
+	position: absolute;
+	top: -100px;
+	font-size: 250px;
+	font-weight: bold;
+	left: calc(50% - 125px);
+  }
+
+  main div#p2 div.Languages-container #python-logo {
+	position: absolute;
+	font-size: 230px;
+	top: -80px;
+	left: calc(50% - 115px);
+  }
+
+  main div#p2 div.Languages-container #ruby-logo {
+	position: absolute;
+	top: -80px;
+	left: calc(50% - 120px);
+  }
 
 
 
@@ -135,3 +263,6 @@ position: relative;
 left: 300px;
 top: 160px;
 }
+
+
+  
